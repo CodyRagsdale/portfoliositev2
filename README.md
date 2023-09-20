@@ -41,13 +41,13 @@ Follow these steps to get the project running on your local machine.
 ### Installation
 
 1. Clone the repository
-git clone https://github.com/CodyRagsdale/portfoliositev2.git
+- git clone https://github.com/CodyRagsdale/portfoliositev2.git
 2. Navigate into the directory
-cd portfoliositev2
+- cd portfoliositev2
 3. Install dependencies
-npm install
+- npm install
 4. Start the development server
-npm start
+- npm start
 
 
 ## Contributing
