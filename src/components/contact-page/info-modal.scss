@@ -18,7 +18,7 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
   .pleaForKindness {
-    font-size: 1.2rem; // Adjust the font size as needed
+    font-size: 1.2rem;
     color: #888;
     margin-top: 1em;
   }
@@ -40,6 +40,20 @@
 
     &:hover {
       background-color: #fa92fb;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 1rem;
+
+    .pleaForKindness {
+      font-size: 1rem;
+    }
+
+    .close-button {
+      font-size: 0.9em;
+      padding: 8px 16px;
     }
   }
 }
