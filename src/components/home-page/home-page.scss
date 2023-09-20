@@ -1,0 +1,94 @@
+.home-page {
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-pic {
+      width: 18%;
+      height: auto;
+      border-radius: 50%;
+      animation: zoomInDown;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 0.8s;
+
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 3em;
+      font-weight: 650;
+      font-family: 'Rock Salt', cursive;
+      color: #8f8cf2;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    h2 {
+      color: black;
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 1.5em;
+      letter-spacing: 3px;
+      font-family: 'Amatic SC', cursive;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 2em;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      font-family: 'Amatic SC', cursive;
+    }
+  }
+
+  .description {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.4em;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-family: 'Amatic SC', cursive;
+  }
+
+  .flat-button {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    color: #a653f5;
+    background-color: #dbd7d2;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-family: 'Jura', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #a653f5;
+    border-radius: 5px;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: #fa92fb;
+    }
+
+    @media (max-width: 768px) {
+      width: auto; // Automatically adjust the width
+      padding: 12px 24px; // Increase padding to ensure text fits
+      font-size: 0.8em; // Reduce font size
+      letter-spacing: 3px; // Reduce letter spacing
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.about-page {
+  background-color: #dbd7d2;
+  color: #333;
+  padding-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: 'Helvetica', Arial, sans-serif;
+  box-sizing: border-box;
+
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #8f8cf2;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Rock Salt', cursive;
+    text-shadow: 1px 1px 2px black;
+
+    @media (max-width: 768px) {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+  }
+
+  p {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 10px 0 30px;
+    max-width: 800px;
+    font-family: 'Jura', sans-serif;
+
+    @media (max-width: 768px) {
+      font-size: 1.2em;
+      margin: 8px 0 20px;
+    }
+  }
+
+  .section-icon {
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: black;
+    animation: zoomInDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+  }
+
+  .about-section {
+    position: relative;
+    border-radius: 12px;
+    min-height: 650px;
+    max-height: 650px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 35px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      // For tablet screens and below
+      width: 90%; // Use more width of the screen
+      min-height: auto;
+      max-height: auto;
+      overflow-y: visible;
+      padding: 25px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 480px) {
+      // For mobile screens
+      width: 100%; // Use the full width
+      border-radius: 0;
+    }
+
+    &:hover {
+      // Only the top icon changes color when hovered over
+      .section-icon {
+        color: #fa92fb;
+      }
+    }
+
+    .section-navigation {
+      position: absolute;
+      bottom: 20px; // Increased from 10px to 20px to adjust position
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 100px;
+
+      @media (max-width: 768px) {
+        bottom: 10px;
+        width: 80px;
+      }
+
+      .nav-icon {
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        @media (max-width: 768px) {
+          font-size: 1.2em;
+        }
+
+        &:hover {
+          color: #fa92fb;
+        }
+      }
+    }
+  }
+}

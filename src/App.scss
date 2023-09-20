@@ -1,0 +1,46 @@
+@import 'animate.css';
+
+@font-face {
+  font-family: 'CustomHelveticaNeue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Morgan Chalk';
+  src: url('./assets/fonts/MorganChalk.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NewRetroStyle';
+  src: url('./assets/fonts/Newretrostyle.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  src: url('./assets/fonts/RockSalt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: url('./assets/fonts/Jura-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  src: url('./assets/fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+input,
+textarea {
+  font-family: 'Helvetica Neue';
+}
+
+body {
+  background: #dbd7d2;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

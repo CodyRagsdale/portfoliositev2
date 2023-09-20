@@ -1,0 +1,38 @@
+.socials-footer {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+
+  .socials-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .socials-logo {
+      margin: 0 1rem;
+      a {
+        color: #a653f5;
+        font-size: 2rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #8f8cf2;
+        }
+      }
+    }
+  }
+
+  // Mobile breakpoint
+  @media (max-width: 768px) {
+    .socials-list {
+      .socials-logo {
+        a {
+          font-size: 1.5rem; // Slightly smaller size for mobile
+        }
+      }
+    }
+  }
+}
